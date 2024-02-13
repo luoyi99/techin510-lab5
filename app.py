@@ -7,7 +7,7 @@ from streamlit_folium import st_folium
 from db import conn_str
 
 st.title("Seattle Events")
-
+st.write(conn_str)
 df = sqlio.read_sql_query("SELECT * FROM events", conn_str)
 st.altair_chart(
     alt.Chart(df).mark_bar().encode(x="count()", y=alt.Y("category").sort('-x')).interactive(),
