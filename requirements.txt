@@ -3,3 +3,7 @@ requests
 python-dotenv
 streamlit-folium
 sqlalchemy
+streamlit-card
+googlemaps
+numpy
+datetime
